@@ -1,0 +1,348 @@
+* {
+ box-sizing: border-box;
+}
+
+::after,
+::before {
+ box-sizing: border-box;
+ position: absolute;
+ content: "";
+}
+
+.wrapper {
+ position: relative;
+ width: 90vh;
+ height: 90vh;
+ border: 1px solid red;
+}
+
+.head {
+ position: absolute;
+ width: 27%;
+ height: 32%;
+ border: 2px solid black;
+ top: 20%;
+ left: 20%;
+ border-radius: 50%;
+ overflow: hidden;
+ transform: rotate(-2deg);
+ z-index: 4;
+ background: white;
+}
+
+
+
+.eye {
+ position: absolute;
+ z-index: 2;
+
+}
+
+.eye--right {
+ width: 11%;
+ height: 23%;
+ background-color: black;
+ border-radius: 50%;
+ top: 24%;
+ left: 56%;
+ transform: rotate(-8deg);
+}
+
+.eye--left {
+ width: 9%;
+ height: 15%;
+ background-color: black;
+ border-radius: 50%;
+ top: 25%;
+ left: 83%;
+ transform: rotate(-8deg);
+
+}
+
+.eyebrow {
+ position: absolute;
+ background-color: black;
+ border-radius: 50%;
+
+}
+
+.eyebrow--lower {
+ width: 25%;
+ height: 25%;
+ top: 19%;
+ left: 47%;
+ transform: rotate(-13deg);
+}
+
+
+.eyebrow--higher {
+ width: 25%;
+ height: 16%;
+ top: 18%;
+ left: 42%;
+ transform: rotate(-6deg);
+}
+
+
+.eyebrow::after {
+ background-color: white;
+ width: 100%;
+ height: 154%;
+ border-radius: 50%;
+ top: -5%;
+ left: 6%;
+}
+
+.eye-patch {
+ position: absolute;
+ width: 32%;
+ height: 56%;
+ left: 70%;
+ top: -14%;
+ background-color: #f9a51b;
+ transform: rotate(-24deg);
+
+}
+
+.eye-patch::before {
+ width: 34%;
+ height: 91%;
+ background-color: white;
+ border-radius: 50%;
+ top: 14%;
+ left: -23%;
+}
+
+.eye-patch::after {
+ width: 91%;
+ height: 8%;
+ background-color: white;
+ border-radius: 50%;
+ top: 98%;
+ left: -9%;
+}
+
+
+
+.muffle {
+ position: absolute;
+ width: 20%;
+ height: 19%;
+
+ top: 32%;
+ left: 36%;
+ border-radius: 50%;
+ background-color: white;
+ transform: rotate(-36deg);
+ box-shadow: 4px 2px 0px 0px black;
+ z-index: 5;
+}
+
+.snout {
+ position: absolute;
+ width: 30%;
+ height: 30%;
+ background-color: black;
+ border-radius: 20%;
+ top: 36%;
+ left: 50%;
+ transform: rotate(62deg);
+ z-index: 999
+}
+
+.snout::before,
+.snout::after {
+ background-color: black;
+ width: 100%;
+ height: 100%;
+ border-radius: 50%;
+}
+
+.snout::before {
+ top: 0;
+ left: -40%;
+}
+
+.snout::after {
+ top: -40%;
+ left: 0%;
+}
+
+.snout__fill {
+ width: 80%;
+ height: 20%;
+ background-color: black;
+ position: absolute;
+ transform: rotate(-43deg);
+ top: -9%;
+ left: -38%;
+ z-index: 9999;
+}
+
+.snout__highlight {
+ z-index: 9999;
+ position: absolute;
+ top: 2%;
+ left: 40%;
+ width: 30%;
+ height: 20%;
+ background-color: white;
+ border-radius: 50%;
+ transform: rotate(28deg);
+}
+
+.earTaped {
+ position: absolute;
+ border-radius: 50%;
+ border: 2px solid black;
+ transform: rotate(54deg);
+ top: 14%;
+ width: 19%;
+ height: 8%;
+ z-index: 999;
+}
+
+.earTaped--right {
+ background-color: white;
+ left: 24%;
+}
+
+.earTaped--left {
+ left: 35%;
+ background-color: #f9a51b;
+}
+
+
+
+.earBasis {
+ position: absolute;
+ border-radius: 50% 20% 50%;
+ border: 2px solid black;
+ transform: rotate(-66deg);
+ top: 16%;
+
+ width: 21%;
+ height: 9%;
+ z-index: 1;
+}
+
+.earBasis--right {
+ background-color: white;
+ left: 17%;
+}
+
+.earBasis--left {
+ background-color: #f9a51b;
+ left: 28%;
+}
+
+.mounth__container {
+ position: absolute;
+ width: 126%;
+ height: 84%;
+ top: 25%;
+
+ left: -51%;
+ border-radius: 50%;
+ background-color: white;
+ z-index: 5;
+ transform: rotate(20deg);
+}
+
+.mounth__container::after {
+ width: 12%;
+ height: 3%;
+ background-color: black;
+ top: 23px;
+ left: 29px;
+ border-radius: 50%;
+ transform: rotate(-30deg);
+}
+
+.mounth {
+ position: absolute;
+ width: 50%;
+ height: 50%;
+ top: 30%;
+ border-left: 3px solid black;
+ border-bottom: 3px solid black;
+ left: 20%;
+ transform: rotate(8deg);
+ border-radius: 0 0 0 50%;
+ overflow: hidden;
+}
+
+.mounth::before {
+ left: -5%;
+ background-color: white;
+ border-radius: 50%;
+ width: 122%;
+ height: 96%;
+ top: -65%;
+ transform: rotate(10deg);
+ box-shadow: 0px 4px 0px 0px;
+ z-index: 2;
+}
+
+.mounth::after {
+ left: 84%;
+ background-color: white;
+ border-radius: 50%;
+ width: 40%;
+ height: 60%;
+ top: 36%;
+ transform: rotate(95deg);
+ box-shadow: 0px 4px 0px 0px;
+ z-index: 2;
+}
+
+.mounth__fill {
+ position: absolute;
+ width: 50%;
+ height: 100%;
+ top: 0;
+ z-index: 2;
+
+}
+
+.fill--left {
+ background-color: #831f40;
+ left: 0;
+
+}
+
+.fill--right {
+ background-color: #ec267a;
+ right: 0;
+
+}
+
+.tonque {
+ position: absolute;
+ width: 54%;
+ height: 50%;
+ background-color: #f9cacd;
+ border-radius: 20%;
+ top: 55%;
+ left: 0%;
+ z-index: 999;
+ box-shadow: 0px -3px 1px 2px;
+}
+
+.tonque::before,
+.tonque::after {
+ background-color: #f9cacd;
+ width: 50%;
+ height: 50%;
+ border-radius: 50%;
+}
+
+.tonque::before {
+ left: 51%;
+ top: -7%;
+}
+
+.tonque::after {
+ left: 0%;
+ top: -12%;
+}
